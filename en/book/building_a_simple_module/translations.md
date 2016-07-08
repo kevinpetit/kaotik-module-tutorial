@@ -29,18 +29,18 @@ Open up index.php and change the following:
     echo '<div class="left">'.PP_NAME.'</div>';
     echo '<div class="right">'.PP_EMAIL.'</div>';
     // Load up the XOOPS member handler
-    $member_handler =& xoops_gethandler('member');
+    $memberHandler = xoops_getHandler('member');
     // Grab all our members
-    $allUsers =& $member_handler->getUsers();
+    $allUsers = $memberHandler->getUsers();
     // Print out our users one by one.
-    foreach(array_keys($allUsers) as $i) {
+    foreach($allUsers as $user) {
         echo '<div class="left">';
         // Let's write the username
-        echo $allUsers[$i]->getVar('uname');
+        echo $allUsers[$user]->getVar('uname');
         echo '</div>';
         echo '<div class="right">';
         // Let's write the e-mail now
-        echo $allUsers[$i]->getVar('email');
+        echo $allUsers[$user]->getVar('email');
         echo '</div>';
     }
 

@@ -37,8 +37,8 @@ And now we can finalize our file **index.php**:
             // All values are done, let's prepare our SQL-query to store this information
             $query      =   "INSERT INTO ".$xoopsDB->prefix(basename(__DIR__).'_myform')." (name, address, telephone, email) VALUES ('$name', '$address', '$tel', '$email' )";
             // Let's perform the query
-            $res        =   $xoopsDB->query($query);
-            if (!$res) {
+            $result        =   $xoopsDB->query($query);
+            if (!$result) {
                 echo PP_ERROR . $xoopsDB->error;
             } else {
                 echo PP_SAVED;

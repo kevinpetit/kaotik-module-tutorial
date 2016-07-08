@@ -28,8 +28,8 @@ Open up **index.php** and change the code to this:
             // All values are done, let's prepare our SQL-query to store this information
             $query      =   "INSERT INTO ".$xoopsDB->prefix(basename(__DIR__)."_myform")." (name, address, telephone, email) VALUES ('$name', '$address', '$tel', '$email' )";
             // Let's perform the query
-            $res        =   $xoopsDB->query($query);
-            if (!$res) {
+            $result        =   $xoopsDB->query($query);
+            if (!$result) {
                 $xoopsTpl->assign('msg', "<p class='bg-danger'>".PP_ERROR . $xoopsDB->error."</p>");
             } else {
                 $xoopsTpl->assign('msg', "<p class='bg-success'>".PP_SAVED."</p>");

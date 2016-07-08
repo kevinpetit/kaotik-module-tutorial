@@ -31,12 +31,12 @@ Modify our file so that it looks like this:
     // This file contains the header and layout of our XOOPS website.
     require_once XOOPS_ROOT_PATH . '/header.php';
     // Load up the XOOPS member handler
-    $member_handler =& xoops_gethandler('member');
+    $memberHandler = xoops_getHandler('member');
     // Grab all our members
-    $allUsers =& $member_handler->getUsers();
+    $allUsers = $memberHandler->getUsers();
     // Now let's loop through all our users
-    foreach(array_keys($allUsers) as $i) {
-        var_dump($allUsers[$i]);
+    foreach($allUsers as $user) {
+        \Xmf\Debug::dump($user);
         echo '<br>';
     }
     // This file contains the footer, which contains scripts and closes our layout.
@@ -55,8 +55,6 @@ We're going to add some new lines to our code, but first let's delete everything
 
 ```php
 <?php
-// Tutorial 
-// Created by KaotiK
 require('../../mainfile.php');
 require(XOOPS_ROOT_PATH.'/header.php');
 ?>
@@ -86,18 +84,18 @@ Once again, here's the complete new code:
     echo '<div class="left">Name</div>';
     echo '<div class="right">E-mail</div>';
     // Load up the XOOPS member handler
-    $member_handler =& xoops_gethandler('member');
+    $memberHandler = xoops_getHandler('member');
     // Grab all our members
-    $allUsers =& $member_handler->getUsers();
+    $allUsers = $memberHandler->getUsers();
     // Print out our users one by one.
-    foreach(array_keys($allUsers) as $i) {
+    foreach($allUsers as $user) {
         echo '<div class="left">';
         // Let's write the username
-        echo $allUsers[$i]->getVar('uname');
+        echo $allUsers[$user]->getVar('uname');
         echo '</div>';
         echo '<div class="right">';
         // Let's write the e-mail now
-        echo $allUsers[$i]->getVar('email');
+        echo $allUsers[$user]->getVar('email');
         echo '</div>';
     }
 

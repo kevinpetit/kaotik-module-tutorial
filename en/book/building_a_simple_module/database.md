@@ -27,7 +27,7 @@ Okay, once that's done we need to tell XOOPS what to put inside those tables (th
 To do this we need to create another folder called **sql**. Inside this new folder, we'll create a file called mysql.sql and put this code inside of the new file:
 
 ```php
-CREATE TABLE tutorial_myform (
+CREATE TABLE people_myform (
 tt_id int(5) unsigned NOT NULL auto_increment,
 name varchar(30) NOT NULL default '',
 address varchar(30) NOT NULL default '',
@@ -41,7 +41,7 @@ KEY name (name)
 This is SQL-code - if you haven't used it before or if you don't understand it, search for a tutorial on SQL. It's not too hard and you'll need it all the time.
 
 Okay, let's go over the lines of code:
-* The first line, **CREATE TABLE tutorial\_myform (** tells XOOPS to create a table called **tutorial_myform**.
+* The first line, **CREATE TABLE people\_myform (** tells XOOPS to create a table called **people_myform**.
 * The second line will create an unsigned integer that can't be null and will auto-increment called tt_id. In normal words: this is an ID that will automaticly increase (auto-increment), it can't be a negative number (unsigned), it's a whole number (integer) and it can't be empty.
 * The third, fourth, fifth and sixth line will create a varchar field that can't be empty and has an empty default value. Varchars can contain almost everything (hence the name varchars, various characters).
 * The seventh line will make tt_id the primary key. This makes it easier to search on (primary keys need to be unique).

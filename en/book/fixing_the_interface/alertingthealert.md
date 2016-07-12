@@ -71,5 +71,8 @@ Open up **index.php** and change the code to this:
 ?>
 ```
 
-What we've done here is adding a class (either bg-success or bg-danger) to our msg variable, like this: **"<p class='bg-success'>".PP_SAVED."</p>"**.
+What we've done here is adding a class (either bg-success or bg-danger) to our msg variable, like this: 
+```html
+"<p class='bg-success'>".PP_SAVED."</p>"
+```
 Because of this, our variables are now loaded wrapped in this style - so our error (or success) messages now have a style.

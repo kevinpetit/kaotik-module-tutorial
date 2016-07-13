@@ -15,7 +15,7 @@
 
 
 This book will learn you how to build modules for XOOPS. 
-You are assumed to have at least a basic understanding of HTML, SQL and PHP.
+You are assumed to have at least a **basic** understanding of HTML, SQL and PHP.
 
 # Table of Content
 

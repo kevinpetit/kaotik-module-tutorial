@@ -49,5 +49,8 @@ I'll go over what we've changed:
 
 * On the top of our form, we added a new block of code:
 
-* 
+
+
+* Let's go over with what this does:
+
 

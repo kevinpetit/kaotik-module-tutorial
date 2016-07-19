@@ -1,10 +1,12 @@
-#### Adding AJAX to our module!
-In this tutorial, we're going to take a look at how to use AJAX in a XOOPS module. To achieve this, we'll be using jQuery - there are other libraries for this, but the one we're going with is jQuery as it's without a doubt the most popular one around.
+#### AJAX for all!
 
-Now, what is AJAX? AJAX is a technology that allows you to update pieces of (or even your entire) webpages without having to reload. This van be very useful, and when it's correctly implemented, it can really cut on server loads.
+In this chapter, we're going to take a good look at how we can use AJAX in a XOOPS module. We're going to use jQuery for this, as it's the most popular javascript library around - however, you can use other libraries as well! We're just going to use jQuery.
 
-When should you use it? This depends on what you want to achieve. If you have a table with dates, you might use AJAX to provide table sorting. If you have a form you're submitting, you can use AJAX there too. 
-The possibilites are nearly endless, but don't think it can solve everything.
-When used correctly however, it's a very powerfull tool.
+Now, first of all, what is AJAX? AJAX is a technology that allows us to update pieces \(or even our entire webpage\) without having to reload it. Google Maps is a good example of an AJAX website!
 
-Let's get started with AJAXifying our module!
+This can be really handy and usefull and when it's correctly implemented it can also lighten the load on your server.
+
+So where should you use AJAX? Well, that depends on what you want to achieve. You can use AJAX to provide table sorting on date, use it to submit forms without reloading your page, use it to load up articles when you scroll down and many others.
+
+The possibilites are nearly endless! Let's get started with AJAXifying our module!
+

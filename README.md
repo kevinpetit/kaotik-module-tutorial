@@ -33,6 +33,8 @@ You are assumed to have at least a basic understanding of HTML, SQL and PHP.
     * [Moving to Smarty](book/smarty_sanitation/movingtosmarty.md)
     * [Forms in Smarty](book/smarty_sanitation/formsinsmarty.md)
     * [Text sanitation](book/smarty_sanitation/textsanitation.md)
+* [AJAX for All!](book/ajax_for_all/introduction.md) 
+    * [The Second Chapter](book) 
 * [Part 3 - Building an AJAX Module](book/3.md)
 * [Part 4 - Xoops Blocks](book/4.md)
 * [Part 6 - Theme Development](book/6.md)

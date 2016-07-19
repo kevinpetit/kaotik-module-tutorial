@@ -28,5 +28,5 @@
 * [Part 11 - Jquery: Form Validation+Rounded Corners+List Items](book/11.md)
 * [Part 12 - Cloning functions, a diferent approach dealing with classes.](book/12.md)
 * [Credits](book/13.md)
-* te
+* Test
 
